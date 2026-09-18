@@ -1,3 +1,3 @@
-# foxparker.github.io
+# Bobcatgoldcraft.github.io
 
-Portfolio: documents turned into clean spreadsheets.
+Portfolio: traceable PDF and public-record data extraction into clean Excel and CSV files.
