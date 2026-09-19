@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style><title>Source to Spreadsheet</title><meta name="description" content="Documents turned into clean spreadsheets. Invoices, filings, statements and web pages become one table in the columns you asked for, with every row citing the file and page it came from."><meta property="og:type" content="website"><meta property="og:title" content="Source to Spreadsheet"><meta property="og:description" content="Documents turned into clean spreadsheets. Invoices, filings, statements and web pages become one table in the columns you asked for, with every row citing the file and page it came from."><meta name="twitter:card" content="summary"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Ctext y=%2714%27 font-size=%2714%27%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E"></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style><title>Source to Spreadsheet</title><meta name="description" content="Documents turned into clean spreadsheets. Invoices, filings, statements and authorized public records become one table in the columns you asked for, with every row citing the file and page it came from."><meta property="og:type" content="website"><meta property="og:title" content="Source to Spreadsheet"><meta property="og:description" content="Documents turned into clean spreadsheets. Invoices, filings, statements and authorized public records become one table in the columns you asked for, with every row citing the file and page it came from."><meta name="twitter:card" content="summary"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Ctext y=%2714%27 font-size=%2714%27%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E"></head><body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -53,6 +53,24 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* ---------- downloadable sample ---------- */
+.sample-card{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;
+  background:var(--panel);border:1px solid var(--rule);border-radius:12px;
+  padding:30px 32px;box-shadow:var(--shadow);
+}
+.sample-card h3{
+  font-family:Newsreader,Georgia,serif;font-weight:400;font-size:1.55rem;
+  margin:0 0 7px;letter-spacing:-.01em;
+}
+.sample-card p{margin:0;color:var(--ink-soft);max-width:48em;font-size:14.5px;line-height:1.65}
+.sample-link{
+  display:inline-block;white-space:nowrap;background:var(--parsed);color:#07130c;
+  border-radius:7px;padding:11px 15px;font-family:"IBM Plex Mono",monospace;
+  font-size:12px;font-weight:600;text-decoration:none;
+}
+.sample-link:hover{filter:brightness(1.08)}
 
 /* ---------- masthead ---------- */
 header{border-bottom:1px solid var(--rule);padding:64px 0 40px;margin-bottom:56px}
@@ -204,6 +222,18 @@ footer p{margin:0 0 8px;max-width:52em}
     rows, find none, and hand back a wall of text. Reading a document is not the same as
     detecting a grid in it.</figcaption>
   </figure>
+</section>
+
+<section>
+  <h2>A real, public-source sample you can open</h2>
+  <p class="sec-sub">A four-row extraction from an official Ohio Legislative Service Commission PDF. It includes the original source link, page citations, normalized amounts, and a total that reconciles to the source.</p>
+  <div class="sample-card">
+    <div>
+      <h3>Grant awards PDF extraction</h3>
+      <p>The workbook shows the exact delivery format: clean rows, clear source references, and a stated limitation instead of an invented claim about automation.</p>
+    </div>
+    <a class="sample-link" href="grant-awards-pdf-extraction-sample.xlsx">Download .xlsx</a>
+  </div>
 </section>
 
 <section>
